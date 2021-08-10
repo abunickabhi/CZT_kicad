@@ -1537,12 +1537,20 @@ Wire Wire Line
 $Comp
 L Sensor:DHT11 U4
 U 1 1 6156F1D7
-P 9350 5800
-F 0 "U4" V 9106 5846 50  0000 R CNN
-F 1 "DHT11" V 9106 5755 50  0000 R CNN
-F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 9106 5755 50  0001 R CNN
-F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 9106 5664 50  0001 R CNN
-	1    9350 5800
+P 7775 6275
+F 0 "U4" V 7531 6321 50  0000 R CNN
+F 1 "DHT11" V 7531 6230 50  0000 R CNN
+F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 7531 6230 50  0001 R CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 7531 6139 50  0001 R CNN
+	1    7775 6275
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	7775 5975 7775 5600
+Wire Wire Line
+	8075 6275 8650 6275
+Wire Wire Line
+	7475 6275 7150 6275
+Text Label 7150 6275 0    50   ~ 0
+VCC
 $EndSCHEMATC
