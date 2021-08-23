@@ -877,28 +877,6 @@ F 3 "" H 5175 250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C8
-U 1 1 611C2D71
-P 7900 4675
-F 0 "C8" H 8015 4721 50  0000 L CNN
-F 1 "0.0123uF" H 8015 4630 50  0000 L CNN
-F 2 "CZTBoardV3:C0805K" H 7900 4675 50  0001 C CNN
-F 3 "~" H 7900 4675 50  0001 C CNN
-	1    7900 4675
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C9
-U 1 1 611C6F51
-P 8500 4675
-F 0 "C9" H 8615 4721 50  0000 L CNN
-F 1 "0.0123uF" H 8615 4630 50  0000 L CNN
-F 2 "CZTBoardV3:C0805K" H 8500 4675 50  0001 C CNN
-F 3 "~" H 8500 4675 50  0001 C CNN
-	1    8500 4675
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP1 C10
 U 1 1 611CA6B2
 P 9700 4675
@@ -909,79 +887,18 @@ F 3 "~" H 9700 4675 50  0001 C CNN
 	1    9700 4675
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US R19
-U 1 1 611DBC78
-P 8950 4675
-F 0 "R19" H 9018 4721 50  0000 L CNN
-F 1 "2m" H 9018 4630 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 8990 4665 50  0001 C CNN
-F 3 "~" H 8950 4675 50  0001 C CNN
-	1    8950 4675
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R20
-U 1 1 611DDABD
-P 9425 4950
-F 0 "R20" V 9630 4950 50  0000 C CNN
-F 1 "470k" V 9539 4950 50  0000 C CNN
-F 2 "CZTBoardV3:R1206" V 9465 4940 50  0001 C CNN
-F 3 "~" H 9425 4950 50  0001 C CNN
-	1    9425 4950
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9700 4325 9700 4525
-Wire Wire Line
-	9575 4950 9700 4950
 Wire Wire Line
 	9700 4950 9700 4825
 Wire Wire Line
 	9700 4950 10150 4950
-Connection ~ 9700 4950
-Wire Wire Line
-	7900 4525 7900 4325
-Wire Wire Line
-	7900 4825 7900 4950
-Wire Wire Line
-	9275 4950 8950 4950
-Wire Wire Line
-	8500 4825 8500 4950
-Wire Wire Line
-	8950 4825 8950 4950
-Connection ~ 8950 4950
-Wire Wire Line
-	8950 4950 8500 4950
-Wire Wire Line
-	8950 4525 8950 4325
-Connection ~ 8950 4325
-Wire Wire Line
-	8950 4325 9700 4325
-Wire Wire Line
-	8500 4525 8500 4325
 Text Label 9975 4950 0    50   ~ 0
 HV
 Text Label 7400 4325 0    50   ~ 0
 EXT_PICO_600V
 Text Label 7375 4950 0    50   ~ 0
 EXT_PICO_GND
-Connection ~ 7900 4325
-Wire Wire Line
-	7400 4325 7900 4325
-Connection ~ 7900 4950
-Wire Wire Line
-	7375 4950 7900 4950
-Connection ~ 8500 4325
-Wire Wire Line
-	8500 4325 8950 4325
-Wire Wire Line
-	7900 4325 8500 4325
-Connection ~ 8500 4950
-Wire Wire Line
-	7900 4950 8500 4950
-Wire Notes Line
-	6800 8275 125  8275
 Wire Notes Line
 	125  8275 125  3550
 Wire Notes Line
@@ -1553,4 +1470,24 @@ Wire Wire Line
 	7475 6275 7150 6275
 Text Label 7150 6275 0    50   ~ 0
 VCC
+Wire Notes Line
+	6800 8275 125  8275
+Wire Wire Line
+	7400 4325 9700 4325
+Connection ~ 9700 4950
+Wire Wire Line
+	7375 4950 9275 4950
+Wire Wire Line
+	9575 4950 9700 4950
+$Comp
+L Device:R_US R20
+U 1 1 611DDABD
+P 9425 4950
+F 0 "R20" V 9630 4950 50  0000 C CNN
+F 1 "470k" V 9539 4950 50  0000 C CNN
+F 2 "CZTBoardV3:R1206" V 9465 4940 50  0001 C CNN
+F 3 "~" H 9425 4950 50  0001 C CNN
+	1    9425 4950
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

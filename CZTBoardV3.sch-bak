@@ -981,8 +981,6 @@ Connection ~ 8500 4950
 Wire Wire Line
 	7900 4950 8500 4950
 Wire Notes Line
-	6800 8275 125  8275
-Wire Notes Line
 	125  8275 125  3550
 Wire Notes Line
 	125  3550 6800 3550
@@ -1545,4 +1543,14 @@ F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 7531 6139 50  0001
 	1    7775 6275
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	7775 5975 7775 5600
+Wire Wire Line
+	8075 6275 8650 6275
+Wire Wire Line
+	7475 6275 7150 6275
+Text Label 7150 6275 0    50   ~ 0
+VCC
+Wire Notes Line
+	6800 8275 125  8275
 $EndSCHEMATC
