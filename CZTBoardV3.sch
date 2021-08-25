@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 11693 8429
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -87,7 +87,7 @@ Text Label 3700 5500 0    70   ~ 0
 MISO_P
 Wire Wire Line
 	2500 7100 3100 7100
-Text Label 2575 7075 0    70   ~ 0
+Text Label 2550 7100 0    70   ~ 0
 MISO_P
 Connection ~ 3100 7100
 Wire Wire Line
@@ -152,8 +152,6 @@ Text Label 2500 6300 0    10   ~ 0
 DGND
 Wire Wire Line
 	4875 1350 4975 1350
-Wire Wire Line
-	4975 1350 4975 1550
 Text Label 4875 1350 0    10   ~ 0
 DGND
 Text Label 5600 6700 0    50   ~ 0
@@ -180,8 +178,6 @@ Wire Wire Line
 	4375 850  4375 650 
 Wire Wire Line
 	4375 650  4375 450 
-Wire Wire Line
-	4375 450  4475 450 
 Wire Wire Line
 	4175 450  4375 450 
 Connection ~ 4375 650 
@@ -218,7 +214,7 @@ Text Label 5600 5700 0    70   ~ 0
 PWR_ON
 Text Label 5600 5700 0    70   ~ 0
 PWR_ON
-Text Label 1100 1825 0    70   ~ 0
+Text Label 1500 1825 0    70   ~ 0
 PWR_ON
 Wire Wire Line
 	4100 6100 3800 6100
@@ -234,9 +230,7 @@ Wire Wire Line
 	3700 5900 4100 5900
 Text Label 3700 5900 0    70   ~ 0
 GPIO
-Wire Wire Line
-	1100 2025 1500 2025
-Text Label 1200 2025 0    70   ~ 0
+Text Label 1500 2025 0    70   ~ 0
 GPIO
 Wire Wire Line
 	5600 5500 6300 5500
@@ -407,17 +401,6 @@ F 3 "" H 2700 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CZTBoardV3-eagle-import:GND #SUPPLY014
-U 1 1 C4643C99
-P 4075 1450
-F 0 "#SUPPLY014" H 4075 1450 50  0001 C CNN
-F 1 "GND" H 3970 1295 59  0000 L BNN
-F 2 "" H 4075 1450 50  0001 C CNN
-F 3 "" H 4075 1450 50  0001 C CNN
-	1    4075 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L CZTBoardV3-eagle-import:R-US_R1206 R12
 U 1 1 F9C269AE
 P 3100 4300
@@ -440,25 +423,14 @@ F 3 "" H 3100 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CZTBoardV3-eagle-import:R-US_R1206 R14
-U 1 1 5915D5B8
-P 5800 4300
-F 0 "R14" H 5650 4359 59  0000 L BNN
-F 1 "10k" H 5650 4170 59  0000 L BNN
-F 2 "CZTBoardV3:R1206" H 5800 4300 50  0001 C CNN
-F 3 "" H 5800 4300 50  0001 C CNN
-	1    5800 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L CZTBoardV3-eagle-import:R-US_R1206 R16
 U 1 1 96705122
-P 5800 4700
-F 0 "R16" H 5650 4759 59  0000 L BNN
-F 1 "10k" H 5650 4570 59  0000 L BNN
-F 2 "CZTBoardV3:R1206" H 5800 4700 50  0001 C CNN
-F 3 "" H 5800 4700 50  0001 C CNN
-	1    5800 4700
+P 5950 4700
+F 0 "R16" H 5800 4759 59  0000 L BNN
+F 1 "10k" H 5800 4570 59  0000 L BNN
+F 2 "CZTBoardV3:R1206" H 5950 4700 50  0001 C CNN
+F 3 "" H 5950 4700 50  0001 C CNN
+	1    5950 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -517,10 +489,10 @@ F 3 "" H 3100 8000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CZTBoardV3-eagle-import:W237-103 X3
+L CZTBoardV3-eagle-import:W237-103 X6
 U 1 1 D0EFEB30
 P 900 1825
-F 0 "X3" H 900 1860 59  0000 R TNN
+F 0 "X6" H 900 1860 59  0000 R TNN
 F 1 "W237-103" H 800 1680 59  0001 L BNN
 F 2 "CZTBoardV3:W237-103" H 900 1825 50  0001 C CNN
 F 3 "" H 900 1825 50  0001 C CNN
@@ -528,10 +500,10 @@ F 3 "" H 900 1825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CZTBoardV3-eagle-import:W237-103 X3
+L CZTBoardV3-eagle-import:W237-103 X6
 U 2 1 D0EFEB3C
 P 900 1625
-F 0 "X3" H 900 1660 59  0000 R TNN
+F 0 "X6" H 900 1660 59  0000 R TNN
 F 1 "W237-103" H 800 1480 59  0001 L BNN
 F 2 "CZTBoardV3:W237-103" H 900 1625 50  0001 C CNN
 F 3 "" H 900 1625 50  0001 C CNN
@@ -539,10 +511,10 @@ F 3 "" H 900 1625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CZTBoardV3-eagle-import:W237-103 X3
+L CZTBoardV3-eagle-import:W237-103 X6
 U 3 1 D0EFEB38
 P 900 2025
-F 0 "X3" H 900 2060 59  0000 R TNN
+F 0 "X6" H 900 2060 59  0000 R TNN
 F 1 "W237-103" H 800 1880 59  0001 L BNN
 F 2 "CZTBoardV3:W237-103" H 900 2025 50  0001 C CNN
 F 3 "" H 900 2025 50  0001 C CNN
@@ -550,10 +522,10 @@ F 3 "" H 900 2025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CZTBoardV3-eagle-import:W237-102 X1
+L CZTBoardV3-eagle-import:W237-102 X3
 U 2 1 8679BB6D
 P 3275 850
-F 0 "X1" H 3275 885 59  0000 R TNN
+F 0 "X3" H 3275 885 59  0000 R TNN
 F 1 "W237-102" H 3175 705 59  0001 L BNN
 F 2 "CZTBoardV3:W237-102" H 3275 850 50  0001 C CNN
 F 3 "" H 3275 850 50  0001 C CNN
@@ -561,10 +533,10 @@ F 3 "" H 3275 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CZTBoardV3-eagle-import:W237-102 X4
+L CZTBoardV3-eagle-import:W237-102 X5
 U 1 1 38D8100C
 P 500 4900
-F 0 "X4" H 500 4935 59  0000 R TNN
+F 0 "X5" H 500 4935 59  0000 R TNN
 F 1 "W237-102" H 400 4755 59  0001 L BNN
 F 2 "CZTBoardV3:W237-102" H 500 4900 50  0001 C CNN
 F 3 "" H 500 4900 50  0001 C CNN
@@ -572,10 +544,10 @@ F 3 "" H 500 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CZTBoardV3-eagle-import:W237-102 X4
+L CZTBoardV3-eagle-import:W237-102 X5
 U 2 1 38D81000
 P 500 6300
-F 0 "X4" H 500 6335 59  0000 R TNN
+F 0 "X5" H 500 6335 59  0000 R TNN
 F 1 "W237-102" H 400 6155 59  0000 L BNN
 F 2 "CZTBoardV3:W237-102" H 500 6300 50  0001 C CNN
 F 3 "" H 500 6300 50  0001 C CNN
@@ -583,10 +555,10 @@ F 3 "" H 500 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CZTBoardV3-eagle-import:W237-102 X5
+L CZTBoardV3-eagle-import:W237-102 X4
 U 1 1 2CAC95E3
 P 600 4700
-F 0 "X5" H 600 4735 59  0000 R TNN
+F 0 "X4" H 600 4735 59  0000 R TNN
 F 1 "W237-102" H 500 4555 59  0001 L BNN
 F 2 "CZTBoardV3:W237-102" H 600 4700 50  0001 C CNN
 F 3 "" H 600 4700 50  0001 C CNN
@@ -594,10 +566,10 @@ F 3 "" H 600 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CZTBoardV3-eagle-import:W237-102 X5
+L CZTBoardV3-eagle-import:W237-102 X4
 U 2 1 2CAC95EF
 P 600 5100
-F 0 "X5" H 600 5135 59  0000 R TNN
+F 0 "X4" H 600 5135 59  0000 R TNN
 F 1 "W237-102" H 500 4955 59  0000 L BNN
 F 2 "CZTBoardV3:W237-102" H 600 5100 50  0001 C CNN
 F 3 "" H 600 5100 50  0001 C CNN
@@ -701,18 +673,6 @@ Wire Wire Line
 	2000 425  1500 425 
 Wire Wire Line
 	6200 4700 6200 4500
-Connection ~ 6200 4500
-$Comp
-L CZTBoardV3-eagle-import:R-US_R1206 R15
-U 1 1 ED00AE7A
-P 6000 4500
-F 0 "R15" H 5850 4559 59  0000 L BNN
-F 1 "10k" H 5850 4370 59  0000 L BNN
-F 2 "CZTBoardV3:R1206" H 6000 4500 50  0001 C CNN
-F 3 "" H 6000 4500 50  0001 C CNN
-	1    6000 4500
-	1    0    0    -1  
-$EndComp
 Connection ~ 4875 1350
 Text Label 4800 650  0    50   ~ 0
 AVDD_LDO
@@ -777,10 +737,10 @@ VDD
 Text Label 700  425  0    70   ~ 0
 LED-
 $Comp
-L CZTBoardV3-eagle-import:W237-102 X1
+L CZTBoardV3-eagle-import:W237-102 X3
 U 1 1 8679BB61
 P 3375 1350
-F 0 "X1" H 3375 1385 59  0000 R TNN
+F 0 "X3" H 3375 1385 59  0000 R TNN
 F 1 "W237-102" H 3275 1205 59  0001 L BNN
 F 2 "CZTBoardV3:W237-102" H 3375 1350 50  0001 C CNN
 F 3 "" H 3375 1350 50  0001 C CNN
@@ -802,43 +762,8 @@ F 3 "" H 3275 450 50  0001 C CNN
 	2    3275 450 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4875 450  5175 450 
 Text Label 4875 450  0    50   ~ 0
 DVDD_LDO
-$Comp
-L CZTBoardV3-eagle-import:R-US_R1206 R6
-U 1 1 1D372C77
-P 4675 450
-F 0 "R6" H 4625 509 59  0000 L BNN
-F 1 "0E" H 4605 320 59  0000 L BNN
-F 2 "CZTBoardV3:R1206" H 4675 450 50  0001 C CNN
-F 3 "" H 4675 450 50  0001 C CNN
-	1    4675 450 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 1825 1550 1825
-Wire Wire Line
-	6200 4200 6200 4300
-Wire Wire Line
-	5600 4500 5800 4500
-Wire Wire Line
-	6000 4300 6200 4300
-Connection ~ 6200 4300
-Wire Wire Line
-	6200 4300 6200 4500
-Connection ~ 5600 7300
-Connection ~ 5600 7100
-Connection ~ 5600 6900
-Wire Wire Line
-	5600 7400 5600 7300
-Wire Wire Line
-	5600 7100 5600 7300
-Wire Wire Line
-	5600 6900 5600 7100
-Wire Wire Line
-	5600 6700 5600 6900
 Wire Wire Line
 	5600 6400 5600 6500
 Wire Wire Line
@@ -851,17 +776,6 @@ Wire Wire Line
 	4100 6900 4100 6800
 Wire Wire Line
 	4100 4300 4100 4100
-$Comp
-L CZTBoardV3-eagle-import:ORBOTECH_OMS40G256 U1
-U 1 1 89E33A62
-P 4900 5800
-F 0 "U1" H 4900 5800 50  0001 C CNN
-F 1 "ORBOTECH_OMS40G256" H 4900 5800 50  0001 C CNN
-F 2 "CZTBoardV3:ORBOTECH_OMS40G256" H 4900 5800 50  0001 C CNN
-F 3 "" H 4900 5800 50  0001 C CNN
-	1    4900 5800
-	1    0    0    -1  
-$EndComp
 $Comp
 L CZTBoardV3-eagle-import:VDD #VDD01
 U 1 1 72EF7348
@@ -892,9 +806,9 @@ Wire Wire Line
 	9700 4950 10150 4950
 Text Label 9975 4950 0    50   ~ 0
 HV
-Text Label 7400 4325 0    50   ~ 0
+Text Label 8400 4325 0    50   ~ 0
 EXT_PICO_600V
-Text Label 7375 4950 0    50   ~ 0
+Text Label 8450 4950 0    50   ~ 0
 EXT_PICO_GND
 Wire Notes Line
 	125  8275 125  3550
@@ -1269,48 +1183,16 @@ Wire Wire Line
 	5950 2500 5950 2400
 Wire Wire Line
 	5950 2875 5950 2800
-Connection ~ 5525 2575
-Wire Wire Line
-	5525 2575 5525 3250
-Connection ~ 5525 2075
 Wire Wire Line
 	5950 2075 5950 2100
 Wire Wire Line
 	5525 2075 5950 2075
 Wire Wire Line
-	4250 2075 4575 2075
-Connection ~ 4250 2075
-Wire Wire Line
 	4250 2175 4250 2075
-Wire Wire Line
-	4250 2625 4650 2625
-Connection ~ 4250 2625
 Wire Wire Line
 	4250 2475 4250 2625
 Wire Wire Line
-	4650 2425 4775 2425
-Wire Wire Line
-	4650 2625 4650 2425
-Wire Wire Line
-	5525 2575 5525 2475
-Wire Wire Line
-	5250 2575 5525 2575
-Wire Wire Line
-	5250 2425 5250 2575
-Wire Wire Line
-	5175 2425 5250 2425
-Wire Wire Line
 	5525 2075 5525 2175
-Wire Wire Line
-	5250 2075 5525 2075
-Wire Wire Line
-	5250 2225 5250 2075
-Wire Wire Line
-	5175 2225 5250 2225
-Wire Wire Line
-	4650 2225 4775 2225
-Wire Wire Line
-	4650 2075 4650 2225
 $Comp
 L Device:CP1 C14
 U 1 1 612BA189
@@ -1366,17 +1248,6 @@ F 3 "~" H 4250 2325 50  0001 C CNN
 	1    4250 2325
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:L_Core_Ferrite_Coupled L1
-U 1 1 612ABEA8
-P 4975 2325
-F 0 "L1" H 4975 2606 50  0000 C CNN
-F 1 "40uH" H 4975 2515 50  0000 C CNN
-F 2 "Inductor_SMD:L_1206_3216Metric" H 4975 2325 50  0001 C CNN
-F 3 "~" H 4975 2325 50  0001 C CNN
-	1    4975 2325
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3500 2075 4250 2075
 Wire Wire Line
@@ -1389,17 +1260,6 @@ Wire Wire Line
 	5950 3250 5950 3175
 Wire Wire Line
 	5525 3250 5950 3250
-$Comp
-L CZTBoardV3-eagle-import:DGND #SUPPLY07
-U 1 1 2907E397
-P 4975 1650
-F 0 "#SUPPLY07" H 4975 1650 50  0001 C CNN
-F 1 "DGND" H 4870 1525 59  0000 L BNN
-F 2 "" H 4975 1650 50  0001 C CNN
-F 3 "" H 4975 1650 50  0001 C CNN
-	1    4975 1650
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	2325 100  2325 3300
 Wire Notes Line
@@ -1430,8 +1290,6 @@ Wire Notes Line
 	10325 4125 7225 4125
 Text Notes 8400 4225 0    50   ~ 0
 HV filtering circuit
-Wire Wire Line
-	6000 4700 6200 4700
 $Comp
 L Sensor:DHT11 U4
 U 1 1 6156F1D7
@@ -1453,11 +1311,7 @@ Text Label 7975 6375 0    50   ~ 0
 VCC
 Wire Notes Line
 	6800 8275 125  8275
-Wire Wire Line
-	7400 4325 9700 4325
 Connection ~ 9700 4950
-Wire Wire Line
-	7375 4950 9275 4950
 Wire Wire Line
 	9575 4950 9700 4950
 $Comp
@@ -1494,35 +1348,6 @@ Wire Notes Line
 	7200 5400 10325 5400
 Text Notes 8225 5525 0    50   ~ 0
 External Temperature Sensor
-$Sheet
-S 13250 2725 7525 4150
-U 61436D4C
-F0 "Side_panel" 50
-F1 "Side_panel.sch" 50
-$EndSheet
-Wire Wire Line
-	4575 2075 4575 1950
-Wire Wire Line
-	4575 1950 4725 1950
-Connection ~ 4575 2075
-Wire Wire Line
-	4575 2075 4650 2075
-$Comp
-L CZTBoardV3-eagle-import:R-US_R1206 R5
-U 1 1 6144DA61
-P 4925 1950
-F 0 "R5" H 4875 2009 59  0000 L BNN
-F 1 "0E" H 4855 1820 59  0000 L BNN
-F 2 "CZTBoardV3:R1206" H 4925 1950 50  0001 C CNN
-F 3 "" H 4925 1950 50  0001 C CNN
-	1    4925 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5125 1950 5250 1950
-Wire Wire Line
-	5250 1950 5250 2075
-Connection ~ 5250 2075
 Connection ~ 3200 2375
 $Comp
 L CZTBoardV3-eagle-import:LD117A?S IC2
@@ -1539,4 +1364,125 @@ Text Label 2900 2075 0    10   ~ 0
 VCC
 Wire Wire Line
 	2900 2075 2700 2075
+Wire Wire Line
+	5525 2475 5525 2625
+Wire Wire Line
+	4250 2625 5525 2625
+Connection ~ 4250 2625
+Connection ~ 5525 2625
+Wire Wire Line
+	5525 2625 5525 3250
+$Comp
+L CZTBoardV3-eagle-import:W237-102 X1
+U 1 1 6134CF45
+P 8125 4325
+F 0 "X1" H 8125 4360 59  0000 R TNN
+F 1 "W237-102" H 8025 4180 59  0001 L BNN
+F 2 "CZTBoardV3:W237-102" H 8125 4325 50  0001 C CNN
+F 3 "" H 8125 4325 50  0001 C CNN
+	1    8125 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CZTBoardV3-eagle-import:W237-102 X1
+U 2 1 613639D7
+P 8125 4950
+F 0 "X1" H 8125 4985 59  0000 R TNN
+F 1 "W237-102" H 8025 4805 59  0001 L BNN
+F 2 "CZTBoardV3:W237-102" H 8125 4950 50  0001 C CNN
+F 3 "" H 8125 4950 50  0001 C CNN
+	2    8125 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4325 8325 4325
+Wire Wire Line
+	9275 4950 8325 4950
+$Comp
+L CZTBoardV3-eagle-import:AGND #SUPPLY0104
+U 1 1 613D731F
+P 4975 1450
+F 0 "#SUPPLY0104" H 4975 1450 50  0001 C CNN
+F 1 "AGND" H 4870 1325 59  0000 L BNN
+F 2 "" H 4975 1450 50  0001 C CNN
+F 3 "" H 4975 1450 50  0001 C CNN
+	1    4975 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1825 1500 1825
+Wire Wire Line
+	1100 2025 1500 2025
+Connection ~ 6200 4500
+Wire Wire Line
+	5600 4500 5800 4500
+$Comp
+L CZTBoardV3-eagle-import:R-US_R1206 R15
+U 1 1 ED00AE7A
+P 6000 4500
+F 0 "R15" H 5850 4559 59  0000 L BNN
+F 1 "10k" H 5850 4370 59  0000 L BNN
+F 2 "CZTBoardV3:R1206" H 6000 4500 50  0001 C CNN
+F 3 "" H 6000 4500 50  0001 C CNN
+	1    6000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 6700 5600 6900
+Wire Wire Line
+	5600 6900 5600 7100
+Wire Wire Line
+	5600 7100 5600 7300
+Wire Wire Line
+	5600 7400 5600 7300
+Connection ~ 5600 6900
+Connection ~ 5600 7100
+Connection ~ 5600 7300
+$Comp
+L CZTBoardV3-eagle-import:ORBOTECH_OMS40G256 U1
+U 1 1 89E33A62
+P 4900 5800
+F 0 "U1" H 4900 5800 50  0001 C CNN
+F 1 "ORBOTECH_OMS40G256" H 4900 5800 50  0001 C CNN
+F 2 "CZTBoardV3:ORBOTECH_OMS40G256" H 4900 5800 50  0001 C CNN
+F 3 "" H 4900 5800 50  0001 C CNN
+	1    4900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CZTBoardV3-eagle-import:R-US_R1206 R14
+U 1 1 5915D5B8
+P 5875 4300
+F 0 "R14" H 5725 4359 59  0000 L BNN
+F 1 "10k" H 5725 4170 59  0000 L BNN
+F 2 "CZTBoardV3:R1206" H 5875 4300 50  0001 C CNN
+F 3 "" H 5875 4300 50  0001 C CNN
+	1    5875 4300
+	1    0    0    -1  
+$EndComp
+Text Label 5675 4500 0    50   ~ 0
+TMS
+Wire Wire Line
+	6200 4200 6200 4300
+Wire Wire Line
+	5600 4300 5675 4300
+Wire Wire Line
+	6075 4300 6200 4300
+Connection ~ 6200 4300
+Wire Wire Line
+	6200 4300 6200 4500
+Text Label 5650 4300 0    50   ~ 0
+TCK
+Wire Wire Line
+	5600 4700 5750 4700
+Wire Wire Line
+	6150 4700 6200 4700
+Text Label 5675 4700 0    50   ~ 0
+TDI
+Wire Wire Line
+	4375 450  5175 450 
+Wire Wire Line
+	4250 2075 5525 2075
+Connection ~ 4250 2075
+Connection ~ 5525 2075
 $EndSCHEMATC
